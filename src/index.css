@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer a:hover{
+    color: #82bba794;
+}
+
+@media (640px <= width <= 768px) {
+    .grid-span-2{
+        grid-column-start: span 2;
+    }   
+}
