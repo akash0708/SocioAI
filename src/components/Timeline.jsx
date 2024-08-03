@@ -10,8 +10,10 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className="timeline-text" style={{ fontFamily: "Gothic A1" }}>
+    <div className="py-16 ">
+      <div className="max-w-[1240px]  xl:px-2vw px-5vw mx-auto ">
+
+      <h1 className="text-6xl timeline-text" style={{ fontFamily: "Gothic A1" }}>
         TIMELINE
       </h1>
 
@@ -87,6 +89,7 @@ const Timeline = () => {
             <span className="right-container-arrow"></span>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

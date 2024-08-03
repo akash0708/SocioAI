@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
   FaTwitter,
   FaInstagram,
-} from 'react-icons/fa';
-import { db } from '../firebaseConfig';
-import { collection, addDoc } from 'firebase/firestore';
+} from "react-icons/fa";
+import { db } from "../firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -29,28 +29,28 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addDoc(collection(db, 'contacts'), formData);
-      alert('Message sent successfully!');
+      await addDoc(collection(db, "contacts"), formData);
+      alert("Message sent successfully!");
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: '',
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
       });
     } catch (error) {
-      console.error('Error adding document: ', error);
+      console.error("Error adding document: ", error);
     }
   };
 
   return (
     <section
       id="contact"
-      className="lg:min-h-screen h-fit w-full flex items-center text-[#0F5132] justify-center p-7 lg:p-2  font-poppins"
+      className="my-20 flex items-center text-[#0F5132] justify-center p-7 lg:p-2  font-poppins"
     >
-      <div className="container xl:max-w-6xl lg:max-w-5xl flex flex-col md:flex-row justify-center lg:items-center w-full">
+      <div className=" xl:max-w-6xl lg:max-w-5xl flex flex-col md:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-2 md:mb-0 w-full lg:w-[50%]  md:mr-9">
-          <h1 className="text-[#1D2E28] text-5xl lg:text-6xl xl:text-[64px] font-bold mb-6 xl:mb-8 text-center md:text-left">
+          <h1 className="text-[#1D2E28] text-5xl lg:text-6xl xl:text-[60px] font-bold mb-6 xl:mb-8 text-center md:text-left">
             CONTACT US
           </h1>
           <div className="space-y-7 w-full max-w-[340px] mx-auto md:mx-0 lg:text-[16px]">
@@ -78,7 +78,7 @@ const Contact = () => {
             <FaInstagram className="hover:text-gray-500 text-[22px]" />
           </div>
         </div>
-        <div className="w-full lg:w-[55%] bg-[#c2c7bf] py-5 px-7 lg:mt-[25px] rounded-xl">
+        <div className="w-full lg:w-[55%] bg-green-100 py-5 px-7 lg:mt-[25px] rounded-xl">
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
               <input

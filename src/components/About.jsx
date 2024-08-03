@@ -1,10 +1,11 @@
-import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-[82vh] p-4 bg-top-green-to-white">
+    <div className="bg-gradient-to-r from-white via-green-400 to-white py-10">
+
+    <div className="flex flex-col justify-center items-center h-[82vh] max-w-[1240px]  xl:px-2vw px-5vw mx-auto">
       <div
-        className="text-[76.63px] leading-[95.79px] font-bold text-center text-[#1D2E28] pb-10"
+        className="text-6xl font-bold text-center text-[#1D2E28] pb-8"
         style={{ fontFamily: "Gothic A1" }}
       >
         ABOUT
@@ -26,6 +27,7 @@ const About = () => {
         excepturi distinctio aliquam, voluptatum obcaecati laborum animi, eaque
         molestiae sint.
       </div>
+    </div>
     </div>
   );
 };
