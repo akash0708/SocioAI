@@ -1,6 +1,10 @@
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Hero from "./components/Hero";
 
 
 function App() {
@@ -8,7 +12,12 @@ function App() {
     {/* import components */}
     <BrowserRouter>
      <Navbar/>
-     </BrowserRouter>
+     
+    <Hero></Hero>
+      <About />
+      <Contact/>
+      <Footer />
+    </BrowserRouter>
     </div>;
 }
 
