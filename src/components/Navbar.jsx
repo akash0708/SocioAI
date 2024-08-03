@@ -17,7 +17,7 @@ function Navbar() {
           className={
             menuopen
               ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0 h-[100%] w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[55%] md:bg-transparent md:h-auto z-50"
-              : "hidden md:flex md:relative md:w-[70%] lg:w-[45%] "
+              : "hidden md:flex md:relative md:w-[70%] lg:w-[55%] "
           }
         >
           <ul className="flex flex-col justify-start gap-9 items-center py-3 w-full text-xl font-bold md:flex-row md:justify-between md:items-center md:gap-0 ">
