@@ -19,8 +19,8 @@ function Navbar() {
         <div
           className={
             menuopen
-              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0 h-[100%] w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[55%] md:bg-transparent md:h-auto z-50"
-              : "hidden md:flex md:relative md:w-[70%] lg:w-[30%] "
+              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0 h-[100%] w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[50%] lg:w-[40%] md:bg-transparent md:h-auto z-50"
+              : "hidden md:flex md:relative md:w-[50%] lg:w-[40%] "
           }
         >
           <ul
@@ -29,7 +29,7 @@ function Navbar() {
           >
             <div
               className={
-                "cross-mobile md:hidden text-white font-extrabold text-5xl flex justify-end items-center w-[100%] h-14 right-6 relative"
+                "cross-mobile md:hidden text-white font-extrabold text-4xl flex justify-end items-center w-[100%] h-14 right-6 relative"
               }
               style={{ fontFamily: "JetBrains Mono" }}
               onClick={() => {
