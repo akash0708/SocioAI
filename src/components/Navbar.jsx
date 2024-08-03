@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 
@@ -91,11 +91,11 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-              <Link to="/#login">
+              <a href="https://forms.gle/uXxHnAHNdnkLJaBDA" target="_blank">
                 <div className="login py-1 w-[120px] rounded-[6px] bg-white text-[#18392B] md:bg-[#18392B] md:text-white flex justify-center items-center hover:bg-[#0A5C36] hover:text-gray-50">
-                  Log In
+                  Register
                 </div>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

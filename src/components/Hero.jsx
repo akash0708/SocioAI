@@ -6,10 +6,10 @@ import hands from "../../public/hand-pic-hero.png";
 function Hero() {
   return (
     <div className="h-screen relative py-28 bg-gradient-to-r from-white via-green-400 to-white overflow-hidden">
-        <div className="ellipse bg-black/20  top-0 left-[7%]"></div>
-        <div className="ellipse bg-black/20 top-0 right-[7%]"></div>
-        <div className="ellipse bg-black/15 -top-10 right-[35%]"></div>
-        <div className="ellipse bg-black/25 -bottom-64 right-[35%]"></div>
+      <div className="ellipse bg-black/20  top-0 left-[7%]"></div>
+      <div className="ellipse bg-black/20 top-0 right-[7%]"></div>
+      <div className="ellipse bg-black/15 -top-10 right-[35%]"></div>
+      <div className="ellipse bg-black/25 -bottom-64 right-[35%]"></div>
       <img
         className="object-contain absolute -left-24 top-20"
         src={vector1}
@@ -42,6 +42,15 @@ function Hero() {
         <div className="flex items-center gap-x-4">
           <p className="text-[24px]">In association with</p>
           <img src={IeeeLogo} alt="IEEE Logo" />
+        </div>
+        <div>
+          <a
+            href="https://forms.gle/uXxHnAHNdnkLJaBDA"
+            target="_blank"
+            className="bg-[#1D2E28] text-white font-bold text-2xl px-6 py-3 rounded-lg relative top-4"
+          >
+            Register Now
+          </a>
         </div>
       </div>
     </div>
