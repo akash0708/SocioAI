@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen w-full flex items-center text-[#0F5132] justify-center p-4 md:pt-2 font-poppins"
+      className="h-screen w-full flex items-center text-[#0F5132] justify-center p-4 md:pt-2 font-poppins"
     >
       <div className="container xl:max-w-6xl lg:max-w-5xl flex flex-col lg:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-8 md:mb-0 w-full lg:w-[50%] lg:mb-[85px] xl:mr-9">
