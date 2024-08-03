@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
-
+import Faq from "./components/Faq";
 
 function App() {
   return <div className="App">
@@ -14,9 +14,14 @@ function App() {
      <Navbar/>
      
     <Hero></Hero>
+      <div className="bg-top-green-to-white min-h-screen flex flex-col">
       <About />
+      <Faq />
+      </div>
       <Contact/>
+     
       <Footer />
+      
     </BrowserRouter>
     </div>;
 }
