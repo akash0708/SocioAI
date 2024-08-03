@@ -20,7 +20,7 @@ function Navbar() {
           className={
             menuopen
               ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0 h-[100%] w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[55%] md:bg-transparent md:h-auto z-50"
-              : "hidden md:flex md:relative md:w-[70%] lg:w-[55%] "
+              : "hidden md:flex md:relative md:w-[70%] lg:w-[30%] "
           }
         >
           <ul
@@ -67,20 +67,6 @@ function Navbar() {
                 }
               >
                 ABOUT
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/register"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36]"
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
-                REGISTER
               </NavLink>
             </li>
             <li>

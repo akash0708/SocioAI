@@ -1,7 +1,10 @@
 const Speakers = () => {
   return (
     <div className="w-full h-fit flex flex-col items-center justify-center gap-12 px-8">
-      <h1 className="w-full text-[#1D2E28] text-4xl md:text-6xl lg:text-6xl font-bold mb-6 xl:mb-8 text-center">
+      <h1
+        className="w-full text-[#1D2E28] text-4xl md:text-6xl lg:text-6xl font-bold mb-6 xl:mb-8 text-center"
+        style={{ fontFamily: "Gothic A1" }}
+      >
         SPEAKERS
       </h1>
       <div className="flex flex-col items-center bg-[#0a5c36] border border-gray-100 rounded-lg shadow md:flex-row md:max-w-xl">

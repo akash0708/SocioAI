@@ -9,7 +9,8 @@ import Faq from "./components/Faq";
 import Prizes from "./components/Prizes.jsx";
 import Timeline from "./components/Timeline";
 import Speakers from "./components/Speaker.jsx";
-import Judges from "./components/Judges.jsx"
+import Judges from "./components/Judges.jsx";
+import Backdrop from "./components/Backdrop.jsx";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Speakers />
         <Judges />
         <Faq />
-        <Prizes/>
+        <Prizes />
         <Contact />
         <Footer />
       </BrowserRouter>

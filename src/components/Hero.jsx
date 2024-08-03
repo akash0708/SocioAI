@@ -35,16 +35,30 @@ function Hero() {
           IEEE COMPUTER SOCIETY <br />
           CHAPTER KOLKATA SECTION
         </h1>
-        <p className="text-2xl font-light text-[#0F5132]">PRESENTS</p>
-        <h1 className="text-[#1D2E28] font-bold text-[100px] leading-[100%]">
-          Socio <span className="text-black">AI</span>
+        <p
+          className="text-2xl font-light text-[#0F5132] tracking-widest"
+          style={{ fontFamily: "JetBrains Mono" }}
+        >
+          PRESENTS
+        </p>
+        <h1
+          className="text-[#1D2E28] font-bold text-[150px] leading-[187.5px]"
+          style={{ fontFamily: "Gothic A1" }}
+        >
+          Socio<span className="text-black">AI</span>
         </h1>
-        <p className="text-[#0F5132] text-2xl">
+        <p
+          className="text-[#0F5132] text-2xl"
+          style={{ fontFamily: "JetBrains Mono" }}
+        >
           Showcase your <span className="text-black">Research.</span> Shape{" "}
           <span className="text-black">Tomorrow.</span>
         </p>
-        <div className="flex items-center gap-x-4">
-          <p className="text-[24px]">In association with</p>
+        <div
+          className="flex items-center gap-x-4"
+          style={{ fontFamily: "JetBrains Mono" }}
+        >
+          <p className="text-[24px] font-semibold">In association with</p>
           <img src={IeeeLogo} alt="IEEE Logo" />
           <img className="h-16" src={logo} alt="IEEE Logo" />
         </div>
@@ -53,6 +67,7 @@ function Hero() {
             href="https://forms.gle/uXxHnAHNdnkLJaBDA"
             target="_blank"
             className="bg-[#1D2E28] text-white font-bold text-2xl px-6 py-3 rounded-lg relative top-4"
+            style={{ fontFamily: "JetBrains Mono" }}
           >
             Register Now
           </a>
