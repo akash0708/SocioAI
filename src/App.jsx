@@ -7,25 +7,28 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Faq from "./components/Faq";
 import Prizes from "./components/Prizes.jsx";
+import Timeline from "./components/Timeline";
+import Speakers from "./components/Speaker.jsx";
 
 function App() {
-  return <div className="App">
-    {/* import components */}
-    <BrowserRouter>
-     <Navbar/>
-     
-    <Hero></Hero>
-      <div className="bg-top-green-to-white min-h-screen flex flex-col">
-      <About />
-      <Faq />
-      <Prizes/>
-      </div>
-      <Contact/>
-     
-      <Footer />
-      
-    </BrowserRouter>
-    </div>;
+  return (
+    <div className="App">
+      {/* import components */}
+      <BrowserRouter>
+        <Navbar />
+
+        <Hero></Hero>
+
+        <About />
+        <Timeline />
+        <Speakers />
+        <Faq />
+        <Prizes/>
+        <Contact />
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

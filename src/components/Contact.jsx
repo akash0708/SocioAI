@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
   FaTwitter,
   FaInstagram,
-} from 'react-icons/fa';
-import { db } from '../firebaseConfig';
-import { collection, addDoc } from 'firebase/firestore';
+} from "react-icons/fa";
+import { db } from "../firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -30,18 +30,18 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addDoc(collection(db, 'contacts'), formData);
-      alert('Message sent successfully!');
+      await addDoc(collection(db, "contacts"), formData);
+      alert("Message sent successfully!");
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
       });
     } catch (error) {
-      console.error('Error adding document: ', error);
+      console.error("Error adding document: ", error);
     }
   };
 
