@@ -2,6 +2,7 @@ import IeeeLogo from "../../public/ieee hero logo.png";
 import vector1 from "../../public/bg-hero-vector1.png";
 import vector2 from "../../public/bg-hero-vector2.png";
 import hands from "../../public/hand-pic-hero.png";
+import logo from "../../public/ieee logo.png"
 
 function Hero() {
   return (
@@ -42,6 +43,7 @@ function Hero() {
         <div className="flex items-center gap-x-4">
           <p className="text-[24px]">In association with</p>
           <img src={IeeeLogo} alt="IEEE Logo" />
+          <img className="h-16" src={logo} alt="IEEE Logo" />
         </div>
         <div>
           <a
