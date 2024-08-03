@@ -48,7 +48,7 @@ const Contact = () => {
       id="contact"
       className="lg:min-h-screen h-fit w-full flex items-center text-[#0F5132] justify-center p-7 lg:p-2  font-poppins"
     >
-      <div className="container xl:max-w-6xl lg:max-w-5xl flex flex-col md:flex-row justify-center lg:items-center w-full">
+      <div className=" xl:max-w-6xl lg:max-w-5xl flex flex-col md:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-2 md:mb-0 w-full lg:w-[50%]  md:mr-9">
           <h1 className="text-[#1D2E28] text-5xl lg:text-6xl xl:text-[64px] font-bold mb-6 xl:mb-8 text-center md:text-left">
             CONTACT US
