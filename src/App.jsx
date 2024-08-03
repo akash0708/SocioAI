@@ -7,23 +7,26 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Faq from "./components/Faq";
 import Timeline from "./components/Timeline";
+import Speakers from "./components/Speaker.jsx";
 
 function App() {
-  return <div className="App">
-    {/* import components */}
-    <BrowserRouter>
-     <Navbar/>
-     
-    <Hero></Hero>
-      
-      <About />
-      <Timeline />
-      <Faq />
-      <Contact />
-      <Footer />
-      
-    </BrowserRouter>
-    </div>;
+  return (
+    <div className="App">
+      {/* import components */}
+      <BrowserRouter>
+        <Navbar />
+
+        <Hero></Hero>
+
+        <About />
+        <Timeline />
+        <Speakers />
+        <Faq />
+        <Contact />
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

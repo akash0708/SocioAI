@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
   FaTwitter,
   FaInstagram,
-} from 'react-icons/fa';
-import { db } from '../firebaseConfig';
-import { collection, addDoc } from 'firebase/firestore';
+} from "react-icons/fa";
+import { db } from "../firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -30,25 +30,25 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addDoc(collection(db, 'contacts'), formData);
-      alert('Message sent successfully!');
+      await addDoc(collection(db, "contacts"), formData);
+      alert("Message sent successfully!");
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
       });
     } catch (error) {
-      console.error('Error adding document: ', error);
+      console.error("Error adding document: ", error);
     }
   };
 
   return (
     <section
       id="contact"
-      className="h-screen w-full flex items-center text-[#0F5132] justify-center p-4 md:pt-2 font-poppins"
+      className="min-h-screen w-full flex items-center text-[#0F5132] justify-center p-4 md:pt-2 font-poppins"
     >
       <div className="container xl:max-w-6xl lg:max-w-5xl flex flex-col lg:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-8 md:mb-0 w-full lg:w-[50%] lg:mb-[85px] xl:mr-9">
