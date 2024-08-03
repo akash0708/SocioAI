@@ -63,8 +63,8 @@ const AccordionSummary = styled((props) => (
     content: '""',
     position: "absolute",
     bottom: 0,
-    left: "50%",
-    transform: "translateX(-50%)",
+    left: "50.5%",
+    transform: "translateX(-48.5%)",
     width: "300px",
     height: expanded ? "2px" : "0",
     backgroundColor: "#64BD83",
@@ -92,7 +92,7 @@ export default function Faq() {
     <ThemeProvider theme={darkTheme}>
       <div className="w-full sm:h-fit pt-16 sm:mt-12 sm:mb-10 my-52 flex flex-col justify-center items-center bg-opacity-0 bg-black">
         <div className="w-full sm:h-fit pt-16 sm:mt-12 sm:mb-10 my-52 flex flex-col justify-center items-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#1D2E28] text-center mb-12 mb-[90px]">
+          <h1 className="text-[76.63px] md:text-5xl font-extrabold text-[#1D2E28] text-center mb-12 mb-[90px]">
             FREQUENTLY ASKED QUESTIONS
           </h1>
 
