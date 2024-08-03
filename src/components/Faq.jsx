@@ -109,7 +109,7 @@ export default function Faq() {
       <div className="w-full sm:h-fit my-[4rem] sm:mt-12 sm:mb-10 flex flex-col justify-center items-center bg-opacity-0 bg-black">
         <div className="w-full sm:h-fit sm:mt-12 sm:mb-10 flex flex-col justify-center items-center">
           <h1
-            className="text-[36px] lg:text-[68px] md:text-5xl font-bold text-[#1D2E28] text-center mb-12"
+            className="text-[36px] lg:text-5xl md:text-5xl font-bold text-[#1D2E28] text-center mb-12"
             style={{ fontFamily: "Gothic A1" }}
           >
             FREQUENTLY ASKED QUESTIONS

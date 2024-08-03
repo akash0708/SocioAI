@@ -6,7 +6,7 @@ import logo from "../../public/ieee logo.png";
 
 function Hero() {
   return (
-    <div className="h-screen relative py-28 bg-gradient-to-r from-white via-green-400 to-white overflow-hidden">
+    <div className="h-screen relative py-28 bg-gradient-to-r from-white via-green-400 to-white ">
       <div className="ellipse bg-black/20  top-0 left-[7%]"></div>
       <div className="ellipse bg-black/20 top-0 right-[7%]"></div>
       <div className="ellipse bg-black/15 -top-10 right-[35%]"></div>

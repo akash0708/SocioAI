@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
     color:#1D2E28;
-    font-size:60px;
     font-weight:bold;
    
 }
@@ -17,8 +16,8 @@
 .timeline {
     position: relative;
     max-width: 600px;
-    margin: 100px auto;
-    margin-bottom:170px;    
+    margin: 60px auto;
+    z-index: 10;
 }
 
 .container {

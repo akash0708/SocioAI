@@ -2,9 +2,9 @@ import CurtainCard from "./CurtainCard.jsx";
 
 function Prizes() {
   return (
-    <div className="flex flex-col justify-center items-center p-4">
+    <div className="flex flex-col justify-center items-center ">
       <div
-        className="text-[76.63px] font-bold text-center text-[#1D2E28] pb-10"
+        className="text-6xl font-bold text-center text-[#1D2E28] pb-10"
         style={{ fontFamily: "Gothic A1" }}
       >
         PRIZES
