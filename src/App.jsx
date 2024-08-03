@@ -9,6 +9,7 @@ import Faq from "./components/Faq";
 import Prizes from "./components/Prizes.jsx";
 import Timeline from "./components/Timeline";
 import Speakers from "./components/Speaker.jsx";
+import Judges from "./components/Judges.jsx"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <About />
         <Timeline />
         <Speakers />
+        <Judges />
         <Faq />
         <Prizes/>
         <Contact />
