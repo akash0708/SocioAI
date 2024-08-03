@@ -4,7 +4,13 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'top-green-to-white': 'linear-gradient(to bottom, #9CDBA6, white)',
+        "top-green-to-white": "linear-gradient(to bottom, #9CDBA6, white)",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        gothic: ['"Gothic A1"', "sans-serif"],
+        thai: ['"Noto Serif Thai"', "serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
