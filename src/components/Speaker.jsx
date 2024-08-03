@@ -1,8 +1,10 @@
 const Speakers = () => {
   return (
-    <div className="w-full h-fit flex flex-col items-center justify-center gap-12">
-      <h1 className="w-full font-bold text-5xl text-center">Speakers</h1>
-      <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <div className="w-full h-fit flex flex-col items-center justify-center gap-12 px-8">
+      <h1 className="w-full text-[#1D2E28] text-4xl md:text-6xl lg:text-6xl font-bold mb-6 xl:mb-8 text-center">
+        SPEAKERS
+      </h1>
+      <div className="flex flex-col items-center bg-[#0a5c36] border border-gray-100 rounded-lg shadow md:flex-row md:max-w-xl">
         <img
           className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
           src="https://conferenceoeh.com/wp-content/uploads/profile-pic-dummy.png"

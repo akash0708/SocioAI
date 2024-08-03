@@ -8,7 +8,10 @@ function Navbar() {
   return (
     <header className="w-full h-100px top-0 shadow-2xl">
       <nav className=" flex justify-between items-center h-[100%] pt-3 pb-3 px-5">
-        <div className="icon font-gothic font-[900] text-4xl">
+        <div
+          className="icon font-gothic font-[900] text-4xl"
+          style={{ fontFamily: "Gothic A1" }}
+        >
           <span className="text-[#1D2E28]">Socio</span>
           <span className="text-black">AI</span>
         </div>
@@ -20,11 +23,15 @@ function Navbar() {
               : "hidden md:flex md:relative md:w-[70%] lg:w-[55%] "
           }
         >
-          <ul className="flex flex-col justify-start gap-9 items-center py-3 w-full text-xl font-bold md:flex-row md:justify-between md:items-center md:gap-0 ">
+          <ul
+            style={{ fontFamily: "JetBrains Mono" }}
+            className="flex flex-col justify-start gap-9 items-center py-3 w-full text-xl font-bold md:flex-row md:justify-between md:items-center md:gap-0 "
+          >
             <div
               className={
                 "cross-mobile md:hidden text-white font-extrabold text-5xl flex justify-end items-center w-[100%] h-14 right-6 relative"
               }
+              style={{ fontFamily: "JetBrains Mono" }}
               onClick={() => {
                 setmenuopen(false);
               }}

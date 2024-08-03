@@ -2,7 +2,7 @@ import IeeeLogo from "../../public/ieee hero logo.png";
 import vector1 from "../../public/bg-hero-vector1.png";
 import vector2 from "../../public/bg-hero-vector2.png";
 import hands from "../../public/hand-pic-hero.png";
-import logo from "../../public/ieee logo.png"
+import logo from "../../public/ieee logo.png";
 
 function Hero() {
   return (
@@ -28,7 +28,10 @@ function Hero() {
       />
 
       <div className="flex h-full flex-col items-center justify-center gap-y-4">
-        <h1 className="text-4xl font-bold text-[#010101] text-center leading-[140%]">
+        <h1
+          className="text-4xl font-bold text-[#010101] text-center leading-[140%]"
+          style={{ fontFamily: "JetBrains Mono" }}
+        >
           IEEE COMPUTER SOCIETY <br />
           CHAPTER KOLKATA SECTION
         </h1>
