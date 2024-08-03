@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Faq from "./components/Faq";
+import Prizes from "./components/Prizes.jsx";
 
 function App() {
   return <div className="App">
@@ -17,6 +18,7 @@ function App() {
       <div className="bg-top-green-to-white min-h-screen flex flex-col">
       <About />
       <Faq />
+      <Prizes/>
       </div>
       <Contact/>
      
