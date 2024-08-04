@@ -54,15 +54,15 @@ const Contact = () => {
             CONTACT US
           </h1>
           <div className="space-y-7 w-full max-w-[340px] mx-auto md:mx-0 lg:text-[16px]">
-            <div className="flex items-center justify-center md:justify-start mr-[10px] md:mr-0 ">
+            <div className="flex items-center justify-center md:justify-start mr-[30px] md:mr-0 ">
               <FaPhoneAlt className="mr-4" />
               <a href="tel:+918910398827">+91 89103 98827</a>
             </div>
-            <div className="flex items-center justify-center md:justify-start ml-[40px] md:ml-0 ">
+            <div className="flex items-center justify-center md:justify-start ml-[18px] md:ml-0 ">
               <FaEnvelope className="mr-4" />
               <a href="mailto:jaduniv.ieee@gmail.com">jaduniv.ieee@gmail.com</a>
             </div>
-            <div className="flex items-start justify-center md:justify-start ml-[92px] md:ml-0 w-[180px] md:w-auto  ">
+            <div className="flex items-start justify-center md:justify-start mx-auto md:ml-0 w-[180px] md:w-auto  ">
               <FaMapMarkerAlt className="mr-4" />
               <span>
                 Jadavpur University
@@ -78,7 +78,7 @@ const Contact = () => {
             <FaInstagram className="hover:text-gray-500 text-[22px]" />
           </div>
         </div>
-        <div className="w-full lg:w-[55%] bg-green-100 py-5 px-7 lg:mt-[25px] rounded-xl">
+        <div className="w-full lg:w-[55%] bg-[#D9D9D9] py-5 px-7 lg:mt-[25px] rounded-xl">
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
               <input
@@ -107,7 +107,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="p-4 pt-3 pb-12 bg-transparent border-b border-gray-700 focus:outline-none placeholder:text-[#0F5132]"
+                className="p-4  md:mb-8 bg-transparent border-b border-gray-700 focus:outline-none placeholder:text-[#0F5132]"
                 required
               />
               <input
@@ -116,7 +116,7 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="p-4 pt-3 pb-12 bg-transparent border-b border-gray-700 focus:outline-none placeholder:text-[#0F5132]"
+                className="p-4  mb-8 bg-transparent border-b border-gray-700 focus:outline-none placeholder:text-[#0F5132]"
                 required
               />
             </div>
