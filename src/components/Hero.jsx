@@ -22,51 +22,51 @@ function Hero() {
         alt=""
       />
       <img
-        className="object-contain absolute right-0 top-1/2 transform -translate-y-1/2 w-full"
+        className="lg:visible hidden object-contain absolute right-0 top-1/2 transform -translate-y-1/2 w-full"
         src={hands}
         alt=""
       />
 
       <div className="flex h-full flex-col items-center justify-center gap-y-4">
         <h1
-          className="text-4xl font-bold text-[#010101] text-center leading-[140%]"
+          className="lg:text-4xl text-xl md:text-3xl font-bold text-[#010101] text-center leading-[140%]"
           style={{ fontFamily: "JetBrains Mono" }}
         >
           IEEE COMPUTER SOCIETY <br />
           CHAPTER KOLKATA SECTION
         </h1>
         <p
-          className="text-2xl font-light text-[#0F5132] tracking-widest"
+          className="lg:text-2xl  text-lg font-light text-[#0F5132] tracking-widest"
           style={{ fontFamily: "JetBrains Mono" }}
         >
           PRESENTS
         </p>
         <h1
-          className="text-[#1D2E28] font-bold text-[150px] leading-[187.5px]"
+          className="text-[#1D2E28] font-bold lg:text-[150px] md:text-6xl text-5xl lg:leading-[187.5px]"
           style={{ fontFamily: "Gothic A1" }}
         >
           Socio<span className="text-black">AI</span>
         </h1>
         <p
-          className="text-[#0F5132] text-2xl"
+          className="text-[#0F5132] lg:text-2xl md:text-lg text-sm text-center"
           style={{ fontFamily: "JetBrains Mono" }}
         >
           Showcase your <span className="text-black">Research.</span> Shape{" "}
           <span className="text-black">Tomorrow.</span>
         </p>
         <div
-          className="flex items-center gap-x-4"
+          className="flex items-center gap-4 md:flex-row flex-col"
           style={{ fontFamily: "JetBrains Mono" }}
         >
-          <p className="text-[24px] font-semibold">In association with</p>
+          <p className="lg:text-[24px] text-md font-semibold">In association with</p>
           <img src={IeeeLogo} alt="IEEE Logo" />
-          <img className="h-16" src={logo} alt="IEEE Logo" />
+          <img className="lg:h-16 h-10" src={logo} alt="IEEE Logo" />
         </div>
         <div>
           <a
             href="https://forms.gle/uXxHnAHNdnkLJaBDA"
             target="_blank"
-            className="bg-[#1D2E28] text-white font-bold text-2xl px-6 py-3 rounded-lg relative top-4"
+            className="bg-[#1D2E28] text-white font-bold lg:text-2xl text-md px-6 py-3 rounded-lg relative top-4"
             style={{ fontFamily: "JetBrains Mono" }}
           >
             Register Now
