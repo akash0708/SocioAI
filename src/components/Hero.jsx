@@ -22,7 +22,7 @@ function Hero() {
         alt=""
       />
       <img
-        className="lg:visible hidden object-contain absolute right-0 top-1/2 transform -translate-y-1/2 w-full"
+        className="visible object-contain absolute right-0 top-1/2 transform -translate-y-1/2 w-full"
         src={hands}
         alt=""
       />
@@ -58,7 +58,9 @@ function Hero() {
           className="flex items-center gap-4 md:flex-row flex-col"
           style={{ fontFamily: "JetBrains Mono" }}
         >
-          <p className="lg:text-[24px] text-md font-semibold">In association with</p>
+          <p className="lg:text-[24px] text-md font-semibold">
+            In association with
+          </p>
           <img src={IeeeLogo} alt="IEEE Logo" />
           <img className="lg:h-16 h-10" src={logo} alt="IEEE Logo" />
         </div>

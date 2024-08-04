@@ -20,7 +20,7 @@ function Navbar() {
           className={
             menuopen
               ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0 h-[100%] w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[50%] lg:w-[40%] md:bg-transparent md:h-auto z-50"
-              : "hidden md:flex md:relative md:w-[50%] lg:w-[40%] "
+              : "hidden md:flex md:relative md:w-[50%] lg:w-[30%] "
           }
         >
           <ul
