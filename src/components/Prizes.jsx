@@ -1,4 +1,4 @@
-import CurtainCard from "./CurtainCard.jsx";
+import PrizeCard from "./PrizeCard.jsx";
 
 function Prizes() {
   return (
@@ -11,9 +11,9 @@ function Prizes() {
         PRIZES
       </div>
       <div className="flex flex-col md:flex-row gap-6 my-4">
-        <CurtainCard position={"First"} />
-        <CurtainCard position={"Second"} />
-        <CurtainCard position={"Third"} />
+        <PrizeCard position={2} />
+        <PrizeCard position={1} />
+        <PrizeCard position={3} />
       </div>
     </div>
     </section>
