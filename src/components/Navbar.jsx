@@ -6,7 +6,7 @@ function Navbar() {
   const [menuopen, setmenuopen] = useState(false);
 
   return (
-    <header className="w-full h-100px top-0 shadow-2xl px-5vw">
+    <header className="w-full h-100px top-0 shadow-2xl px-5vw sticky z-40 bg-white">
       <nav className=" flex justify-between items-center h-[100%] pt-3 pb-3 px-5">
         <div
           className="icon font-gothic font-[900] text-3xl"
@@ -19,8 +19,8 @@ function Navbar() {
         <div
           className={
             menuopen
-              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0 h-[100%] w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[50%] lg:w-[40%] md:bg-transparent md:h-auto z-50"
-              : "hidden md:flex md:relative md:w-[50%] lg:w-[30%] "
+              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0  w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[50%] md:bg-transparent md:h-auto z-50 h-screen"
+              : "hidden md:flex md:relative md:w-[70%] lg:w-[50%] "
           }
         >
           <ul
@@ -42,7 +42,7 @@ function Navbar() {
             <li>
               {" "}
               <a href="#">
-                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B] target:active:text-[#0A5C36]">
                 HOME
                 </div>
               </a>
@@ -50,8 +50,32 @@ function Navbar() {
             <li>
               {" "}
               <a href="#about">
-                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] target:underline text-white md:text-[#18392B]">
                 ABOUT
+                </div>
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#speakers">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                SPEAKERS
+                </div>
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#faq">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                FAQ
+                </div>
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#prizes">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                PRIZES
                 </div>
               </a>
             </li>

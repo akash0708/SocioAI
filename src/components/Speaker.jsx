@@ -1,5 +1,6 @@
 const Speakers = () => {
   return (
+    
     <div className="w-full h-fit flex flex-col items-center justify-center gap-12 px-8 py-16">
       <h1
         className="w-full text-[#1D2E28] text-4xl md:text-6xl lg:text-6xl font-bold mb-4 text-center"
@@ -23,6 +24,7 @@ const Speakers = () => {
         </div>
       </div>
     </div>
+  
   );
 };
 

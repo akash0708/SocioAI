@@ -39,6 +39,7 @@ function SpeakerCard({ speaker }) {
 
 const Speakers = () => {
   return (
+    <section id="speakers">
     <div className="flex flex-col items-center py-16 bg-green-100">
       <h1
         className="text-[#1D2E28] text-4xl md:text-6xl lg:text-6xl font-bold mb-6 xl:mb-8 text-center lg:text-left"
@@ -52,6 +53,7 @@ const Speakers = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
