@@ -3,11 +3,13 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaTwitter,
   FaInstagram,
+  FaFacebook,
+  FaLinkedin
 } from "react-icons/fa";
 import { db } from "../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -73,10 +75,18 @@ const Contact = () => {
               </span>
             </div>
           </div>
-          <div className="flex space-x-6 mt-12 mb-4  justify-center md:justify-start ">
-            <FaTwitter className="hover:text-gray-500 text-[22px]" />
-            <FaInstagram className="hover:text-gray-500 text-[22px]" />
+          <div className="flex space-x-6 mt-12 mb-4 justify-center md:justify-start mr-4 md:mr-0">
+            <a href="https://www.linkedin.com/company/ieee-ju" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="hover:text-gray-500 text-[22px]" />
+            </a>
+            <a href="https://www.facebook.com/ieeejusb" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="hover:text-gray-500 text-[22px]" />
+            </a>
+            <a href="https://www.instagram.com/_ieeeju/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-gray-500 text-[22px]" />
+            </a>
           </div>
+
         </div>
         <div className="w-full lg:w-[55%] bg-[#D9D9D9] py-5 px-7 lg:mt-[25px] rounded-xl">
           <form onSubmit={handleSubmit}>
