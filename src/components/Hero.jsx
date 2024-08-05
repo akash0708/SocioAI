@@ -3,6 +3,7 @@ import vector1 from "../../public/bg-hero-vector1.png";
 import vector2 from "../../public/bg-hero-vector2.png";
 import hands from "../../public/hand-pic-hero.png";
 import logo from "../../public/ieee logo.png";
+import kolkata from "../assets/kolkata.png";
 
 function Hero() {
   return (
@@ -28,13 +29,16 @@ function Hero() {
       />
 
       <div className="flex h-full flex-col items-center justify-center gap-y-4">
-        <h1
+        {/* <h1
           className="lg:text-4xl text-xl md:text-3xl font-bold text-[#010101] text-center leading-[140%]"
           style={{ fontFamily: "JetBrains Mono" }}
         >
           IEEE COMPUTER SOCIETY <br />
           CHAPTER KOLKATA SECTION
-        </h1>
+        </h1> */}
+        <div className="w-80 h-36">
+          <img src={kolkata} alt="" className="w-full h-full object-cover" />
+        </div>
         <p
           className="lg:text-2xl  text-lg font-light text-[#0F5132] tracking-widest"
           style={{ fontFamily: "JetBrains Mono" }}
@@ -61,8 +65,14 @@ function Hero() {
           <p className="lg:text-[24px] text-md font-semibold">
             In association with
           </p>
-          <img src={IeeeLogo} alt="IEEE Logo" />
-          <img className="lg:h-16 h-10" src={logo} alt="IEEE Logo" />
+          <div className="inline w-48 h-20">
+            <img
+              src={IeeeLogo}
+              alt="IEEE Logo"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {/* <img className="lg:h-16 h-10" src={logo} alt="IEEE Logo" /> */}
         </div>
         <div>
           <a
