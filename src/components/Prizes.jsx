@@ -12,7 +12,7 @@ function Prizes() {
       <div className="flex flex-col md:flex-row gap-6 my-4">
         <PrizeCard position={2} />
         <PrizeCard position={1} />
-        <prizeCard position={3} />
+        <PrizeCard position={3} />
       </div>
     </div>
   );
