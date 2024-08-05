@@ -1,6 +1,7 @@
 
 const About = () => {
   return (
+    <section id="about">
     <div className="bg-gradient-to-r from-white via-green-400 to-white py-10">
 
     <div className="flex flex-col justify-center items-center h-[82vh] max-w-[1240px]  xl:px-2vw px-5vw mx-auto">
@@ -29,6 +30,7 @@ const About = () => {
       </div>
     </div>
     </div>
+    </section>
   );
 };
 
