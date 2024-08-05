@@ -1,7 +1,7 @@
-const judges = [
+const speakers = [
     {
         "number" : 1,
-        "name" : "Judge 1 Name",
+        "name" : "Speaker 1 Name",
         "designation" :"Designation",
         "picture" : "https://conferenceoeh.com/wp-content/uploads/profile-pic-dummy.png",
         "instagram" : "",
@@ -9,7 +9,7 @@ const judges = [
     },
     {
         "number" : 2,
-        "name" : " Judge 2 Name",
+        "name" : " Speaker 2 Name",
         "designation" :"Designation",
         "picture" : "https://conferenceoeh.com/wp-content/uploads/profile-pic-dummy.png",
         "instagram" : "",
@@ -17,4 +17,4 @@ const judges = [
     }
 ];
 
-export default judges;
+export default speakers;
