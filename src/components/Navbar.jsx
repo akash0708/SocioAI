@@ -41,47 +41,26 @@ function Navbar() {
 
             <li>
               {" "}
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36] "
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
+              <a href="#">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
                 HOME
-              </NavLink>
+                </div>
+              </a>
             </li>
             <li>
               {" "}
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36]"
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
+              <a href="#about">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
                 ABOUT
-              </NavLink>
+                </div>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/contactus"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36]"
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
+              <a href="#contact">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
                 CONTACT US
-              </NavLink>
+                </div>
+              </a>
             </li>
             <li>
               <a href="https://forms.gle/uXxHnAHNdnkLJaBDA" target="_blank">
