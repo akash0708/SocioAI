@@ -2,6 +2,7 @@ import CurtainCard from "./CurtainCard.jsx";
 
 function Prizes() {
   return (
+    <section id="prizes">
     <div className="flex flex-col justify-center items-center ">
       <div
         className="text-6xl font-bold text-center text-[#1D2E28] pb-10"
@@ -15,6 +16,7 @@ function Prizes() {
         <CurtainCard position={"Third"} />
       </div>
     </div>
+    </section>
   );
 }
 

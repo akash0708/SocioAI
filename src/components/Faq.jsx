@@ -105,6 +105,7 @@ export default function Faq() {
   ];
 
   return (
+    <section id="faq">
     <ThemeProvider theme={darkTheme}>
       <div className="w-full sm:h-fit my-[4rem] sm:mt-12 sm:mb-10 flex flex-col justify-center items-center bg-opacity-0 bg-black">
         <div className="w-full sm:h-fit sm:mt-12 sm:mb-10 flex flex-col justify-center items-center">
@@ -142,5 +143,6 @@ export default function Faq() {
         </div>
       </div>
     </ThemeProvider>
+    </section>
   );
 }
