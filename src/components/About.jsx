@@ -13,7 +13,7 @@ const About = () => {
           className="text-center text-[18px] sm:text-[20px] md:text-[22px] text-[#0F5132] w-full max-w-[1135px]"
           style={{ fontFamily: "JetBrains Mono" }}
         >
-          Welcome to Socio AI, A Thesis Presentation Competition! Hosted by the IEEE Computer Society Chapter, Kolkata Section, this dynamic event invites final-year UG and PG students to showcase their innovative AI projects aimed at solving real-world social issues. Compete for prestigious awards, gain recognition, and connect with like-minded individuals passionate about making a positive impact through AI. Join us in leveraging technology for a better tomorrow!
+          Welcome to Socio AI, A Thesis Presentation Competition! Hosted by the IEEE Computer Society Chapter, Kolkata Section, this dynamic event invites UG and PG students to showcase their innovative AI projects aimed at solving real-world social issues. Compete for prestigious awards, gain recognition, and connect with like-minded individuals passionate about making a positive impact through AI. Join us in leveraging technology for a better tomorrow!
         </div>
       </div>
     </div>
