@@ -4,10 +4,11 @@ import vector2 from "../../public/bg-hero-vector2.png";
 import hands from "../../public/hand-pic-hero.png";
 import logo from "../../public/ieee logo.png";
 import kolkata from "../assets/kolkata.png";
+import QRsocioai from "../../public/QRsocioai.png";
 
 function Hero() {
   return (
-    <div className="h-screen relative py-28 bg-gradient-to-r from-white via-green-400 to-white ">
+    <div className="h-screen relative py-28  bg-gradient-to-r from-white via-green-400 to-white  ">
       <div className="ellipse bg-black/20  top-0 left-[7%]"></div>
       <div className="ellipse bg-black/20 top-0 right-[7%]"></div>
       <div className="ellipse bg-black/15 -top-10 right-[35%]"></div>
@@ -27,8 +28,8 @@ function Hero() {
         src={hands}
         alt=""
       />
-
-      <div className="flex h-full flex-col items-center justify-center gap-y-4">
+       
+      <div className="flex h-full flex-col items-center justify-center gap-y-4 lg:mt-[6.5rem] ">
         {/* <h1
           className="lg:text-4xl text-xl md:text-3xl font-bold text-[#010101] text-center leading-[140%]"
           style={{ fontFamily: "JetBrains Mono" }}
@@ -76,13 +77,21 @@ function Hero() {
         </div>
         <div>
           <a
-            href="https://forms.gle/uXxHnAHNdnkLJaBDA"
+            href="https://bit.ly/socioai"
             target="_blank"
             className="bg-[#1D2E28] text-white font-bold lg:text-2xl text-md px-6 py-3 rounded-lg relative top-4"
             style={{ fontFamily: "JetBrains Mono" }}
           >
             Register Now
           </a>
+          
+        </div>
+        <div className="inline w-[10rem] h-[10rem] mt-8 ">
+        <img
+              src={QRsocioai}
+              alt="Register QR"
+              className="w-full h-full object-cover"
+            />
         </div>
       </div>
     </div>

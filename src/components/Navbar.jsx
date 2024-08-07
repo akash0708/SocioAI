@@ -19,8 +19,8 @@ function Navbar() {
         <div
           className={
             menuopen
-              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0  w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[50%] md:bg-transparent md:h-auto z-50 h-screen"
-              : "hidden md:flex md:relative md:w-[70%] lg:w-[50%] "
+              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0  w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[53%] md:bg-transparent md:h-auto z-50 h-screen"
+              : "hidden md:flex md:relative md:w-[70%] lg:w-[53%] "
           }
         >
           <ul
@@ -87,7 +87,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="https://forms.gle/uXxHnAHNdnkLJaBDA" target="_blank">
+              <a href="https://bit.ly/socioai" target="_blank">
                 <div className="login py-1 w-[120px] rounded-[6px] bg-white text-[#18392B] md:bg-[#18392B] md:text-white flex justify-center items-center hover:bg-[#0A5C36] hover:text-gray-50">
                   Register
                 </div>
