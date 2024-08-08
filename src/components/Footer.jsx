@@ -49,13 +49,13 @@ function Footer() {
               </h2>
               <ul className=" text-[#82BBA7] flex flex-col items-center text-lg">
                 <li>
-                  <a href="#home">Home</a>
+                  <a href="#">Home</a>
                 </li>
                 <li>
                   <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#register">Register</a>
+                  <a href="https://bit.ly/socioai" target="_blank">Register</a>
                 </li>
               </ul>
             </div>
