@@ -19,7 +19,7 @@ function Navbar() {
         <div
           className={
             menuopen
-              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0  w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[53%] md:bg-transparent md:h-auto z-50 h-screen"
+              ? "nav-side-bar flex bg-[#18392B] fixed top-0 right-0 w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[53%] md:bg-transparent md:h-auto z-50 h-screen"
               : "hidden md:flex md:relative md:w-[70%] lg:w-[53%] "
           }
         >
@@ -43,7 +43,7 @@ function Navbar() {
               {" "}
               <a href="#">
                 <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B] target:active:text-[#0A5C36]">
-                HOME
+                  HOME
                 </div>
               </a>
             </li>
@@ -51,7 +51,7 @@ function Navbar() {
               {" "}
               <a href="#about">
                 <div className="hover:text-[#0A5C36] active:text-[#0A5C36] target:underline text-white md:text-[#18392B]">
-                ABOUT
+                  ABOUT
                 </div>
               </a>
             </li>
@@ -59,7 +59,7 @@ function Navbar() {
               {" "}
               <a href="#speakers">
                 <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
-                SPEAKERS
+                  SPEAKERS
                 </div>
               </a>
             </li>
@@ -67,7 +67,7 @@ function Navbar() {
               {" "}
               <a href="#faq">
                 <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
-                FAQ
+                  FAQ
                 </div>
               </a>
             </li>
@@ -75,14 +75,14 @@ function Navbar() {
               {" "}
               <a href="#prizes">
                 <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
-                PRIZES
+                  PRIZES
                 </div>
               </a>
             </li>
             <li>
               <a href="#contact">
                 <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
-                CONTACT US
+                  CONTACT US
                 </div>
               </a>
             </li>

@@ -1,10 +1,9 @@
 import React from "react";
 import "aos/dist/aos.css";
-import "./timeline.css"; // Make sure to adjust the path based on your project structure
+import "./timeline.css"; 
 import AOS from "aos";
 
 const Timeline = () => {
-  // Initialize AOS in useEffect
   React.useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
