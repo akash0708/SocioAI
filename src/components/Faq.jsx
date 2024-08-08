@@ -99,9 +99,17 @@ export default function Faq() {
     {
       id: 4,
       ques: "Where will be the Ideathon held?",
-      ans: "Socio.AI will be conducted by IEEE Jadavpur University Student Branch, at Jadavpur University, Jadavpur Campus on Aug XX, 2024.",
+      ans: "Socio.AI will be conducted by IEEE Jadavpur University Student Branch, at Jadavpur University, Jadavpur Campus on September 12, 2024.",
     },
-    { id: 5, ques: "What are the prizes for winners?", ans: "" },
+    {
+      id: 5,
+      ques: "What are the prizes for winners?",
+      ans: (
+        <Typography color="#64BD83" style={{ fontSize: "1.2rem", marginLeft: "20px" }}>
+          Prizes will be announced soon!
+        </Typography>
+      )
+    },    
   ];
 
   return (

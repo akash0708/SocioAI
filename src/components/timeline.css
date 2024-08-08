@@ -1,8 +1,13 @@
+html,body{
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .timeline-text{
     display:flex;
@@ -169,11 +174,17 @@
         font-size:40px;
     }
     .container{
+       
         width: 100%;
         padding-left:80px;
-        padding-right:25px;
+        padding-right:10px;
     }
 
+   .container:nth-child(1){
+    left:6.8%;
+    overflow-x: hidden;
+    width:92.8%;
+   }
     .text-box{
         font-size:13px;
     }
