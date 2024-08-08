@@ -6,9 +6,12 @@ function Navbar() {
   const [menuopen, setmenuopen] = useState(false);
 
   return (
-    <header className="w-full h-100px top-0 shadow-xl">
+    <header className="w-full h-100px top-0 shadow-2xl px-5vw sticky z-40 bg-white">
       <nav className=" flex justify-between items-center h-[100%] pt-3 pb-3 px-5">
-        <div className="icon font-gothic font-[900] text-4xl">
+        <div
+          className="icon font-gothic font-[900] text-3xl"
+          style={{ fontFamily: "Gothic A1" }}
+        >
           <span className="text-[#1D2E28]">Socio</span>
           <span className="text-black">AI</span>
         </div>
@@ -16,15 +19,19 @@ function Navbar() {
         <div
           className={
             menuopen
-              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0 h-[100%] w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[55%] md:bg-transparent md:h-auto"
-              : "hidden md:flex md:relative md:w-[70%] lg:w-[45%]"
+              ? "nav-side-bar flex bg-[#18392B] absolute top-0 right-0  w-[50%] shadow-xl md:shadow-none md:relative md:right-[none] md:top-[none] md:w-[70%] lg:w-[53%] md:bg-transparent md:h-auto z-50 h-screen"
+              : "hidden md:flex md:relative md:w-[70%] lg:w-[53%] "
           }
         >
-          <ul className="flex flex-col justify-start gap-9 items-center py-3 w-full text-xl font-bold md:flex-row md:justify-between md:items-center md:gap-0 ">
+          <ul
+            style={{ fontFamily: "JetBrains Mono" }}
+            className="flex flex-col justify-start gap-9 items-center py-3 w-full text-lg font-bold md:flex-row md:justify-between md:items-center md:gap-0 "
+          >
             <div
               className={
-                "cross-mobile md:hidden text-white font-extrabold text-5xl flex justify-end items-center w-[100%] h-14 right-6 relative"
+                "cross-mobile md:hidden text-white font-extrabold text-4xl flex justify-end items-center w-[100%] h-14 right-6 relative"
               }
+              style={{ fontFamily: "JetBrains Mono" }}
               onClick={() => {
                 setmenuopen(false);
               }}
@@ -34,64 +41,53 @@ function Navbar() {
 
             <li>
               {" "}
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36] "
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
+              <a href="#">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B] target:active:text-[#0A5C36]">
                 HOME
-              </NavLink>
+                </div>
+              </a>
             </li>
             <li>
               {" "}
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36]"
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
+              <a href="#about">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] target:underline text-white md:text-[#18392B]">
                 ABOUT
-              </NavLink>
+                </div>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/register"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36]"
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
-                REGISTER
-              </NavLink>
+              {" "}
+              <a href="#speakers">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                SPEAKERS
+                </div>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/contactus"
-                className={({ isActive }) =>
-                  ` duration-200 ${
-                    isActive
-                      ? "underline text-[#0A5C36]"
-                      : "text-white md:text-[#18392B]"
-                  }  hover:text-[#0A5C36] hover:underline`
-                }
-              >
+              {" "}
+              <a href="#faq">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                FAQ
+                </div>
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#prizes">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
+                PRIZES
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <div className="hover:text-[#0A5C36] active:text-[#0A5C36] text-white md:text-[#18392B]">
                 CONTACT US
-              </NavLink>
+                </div>
+              </a>
             </li>
             <li>
-              <a href="https://forms.gle/uXxHnAHNdnkLJaBDA" target="_blank">
+              <a href="https://bit.ly/socioai" target="_blank">
                 <div className="login py-1 w-[120px] rounded-[6px] bg-white text-[#18392B] md:bg-[#18392B] md:text-white flex justify-center items-center hover:bg-[#0A5C36] hover:text-gray-50">
                   Register
                 </div>

@@ -5,9 +5,9 @@
 }
 .ellipse {
   position: absolute;
-  
+
   border-radius: 50%;
- 
+
   filter: blur(200px);
   width: 35vmax;
   min-width: 100px;
